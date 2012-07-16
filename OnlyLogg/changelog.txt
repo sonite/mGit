@@ -1,0 +1,28 @@
+/******************(MCU: PIC18F8J50 | Oscillator: 48 MHz)**********************
+ *                                                                      	  *
+ * Logging System															  *
+ *																			  *
+ * Version:        1.5-rc3													  *
+ * Release Date:          2012-06-04										  *
+ * Code:           Finsun Inresol AB										  *
+ * Author:         Finsun Inresol AB										  *
+ ***********************(   Microship MCC18 v3.13    )*************************/
+
+HISTORY
+==============================
+1.5-rc3				2012-06-04
+
+
+BUG FIXES
+
+- 
+
+ADDITIONAL FIXES
+
+- 
+
+FEATURES ADDED
+
+- Public Release
+
+==============================

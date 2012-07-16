@@ -1,0 +1,1232 @@
+MPLINK 4.37, Linker
+Linker Map File - Created Sat May 12 18:57:34 2012
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+          BootResetVector       code   0x000000    program   0x000006
+                   .cinit    romdata   0x000006    program   0x000002
+        BootHighISRVector       code   0x000008    program   0x000006
+         BootLowISRVector       code   0x000018    program   0x000006
+                    .code       code   0x00001e    program   0x000020
+          .code_usbmmap.o       code   0x00003e    program   0x000000
+       .romdata_usbmmap.o    romdata   0x00003e    program   0x000000
+       .idata_usbmmap.o_i    romdata   0x00003e    program   0x000000
+           .code_usbdsc.o       code   0x00003e    program   0x000000
+        .idata_usbdsc.o_i    romdata   0x00003e    program   0x000000
+        .romdata_usbdrv.o    romdata   0x00003e    program   0x000000
+        .idata_usbdrv.o_i    romdata   0x00003e    program   0x000000
+    .romdata_usbctrltrf.o    romdata   0x00003e    program   0x000000
+    .idata_usbctrltrf.o_i    romdata   0x00003e    program   0x000000
+          .romdata_usb9.o    romdata   0x00003e    program   0x000000
+          .idata_usb9.o_i    romdata   0x00003e    program   0x000000
+.idata_Boot87J50Family.o_i    romdata   0x00003e    program   0x000000
+.romdata_Boot87J50Family.o    romdata   0x00003e    program   0x000000
+           .idata_hid.o_i    romdata   0x00003e    program   0x000000
+           .romdata_hid.o    romdata   0x00003e    program   0x000000
+          .idata_main.o_i    romdata   0x00003e    program   0x000000
+          .romdata_main.o    romdata   0x00003e    program   0x000000
+  .code_Boot87J50Family.o       code   0x000080    program   0x0003bc
+       .code_usbctrltrf.o       code   0x00043c    program   0x00033e
+             .code_usb9.o       code   0x00077a    program   0x0002e8
+           .code_usbdrv.o       code   0x000a62    program   0x0001ee
+              .code_hid.o       code   0x000c50    program   0x0001da
+        .romdata_usbdsc.o    romdata   0x000e2a    program   0x0000c2
+             .code_main.o       code   0x000eec    program   0x0000ae
+           AppResetVector       code   0x001000    program   0x000000
+     .config_1fff8_main.o    romdata   0x01fff8    program   0x000001
+     .config_1fff9_main.o    romdata   0x01fff9    program   0x000001
+     .config_1fffa_main.o    romdata   0x01fffa    program   0x000001
+     .config_1fffb_main.o    romdata   0x01fffb    program   0x000001
+     .config_1fffc_main.o    romdata   0x01fffc    program   0x000001
+     .config_1fffd_main.o    romdata   0x01fffd    program   0x000001
+ .udata_Boot87J50Family.o      udata   0x000100       data   0x0000cc
+      .udata_usbctrltrf.o      udata   0x0001cc       data   0x000009
+         .udata_usbmmap.o      udata   0x0001d5       data   0x000004
+            .udata_main.o      udata   0x0001d9       data   0x000003
+             .udata_hid.o      udata   0x0001dc       data   0x000003
+                 .tmpdata      udata   0x0001df       data   0x000003
+          .udata_usbdrv.o      udata   0x0001e2       data   0x000001
+         .idata_usbmmap.o      idata   0x0001e3       data   0x000000
+          .idata_usbdsc.o      idata   0x0001e3       data   0x000000
+          .udata_usbdsc.o      udata   0x0001e3       data   0x000000
+          .idata_usbdrv.o      idata   0x0001e3       data   0x000000
+      .idata_usbctrltrf.o      idata   0x0001e3       data   0x000000
+            .idata_usb9.o      idata   0x0001e3       data   0x000000
+            .udata_usb9.o      udata   0x0001e3       data   0x000000
+            .idata_main.o      idata   0x0001e3       data   0x000000
+             .idata_hid.o      idata   0x0001e3       data   0x000000
+ .idata_Boot87J50Family.o      idata   0x0001e3       data   0x000000
+                  usbdesc      udata   0x000400       data   0x0000a0
+                   .stack      udata   0x000e00       data   0x000100
+              SFR_BANKED0      udata   0x000f40       data   0x000020
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00000d      
+                            0x000018    0x00003d      
+                            0x000080    0x000f99      
+                            0x01fff8    0x01fffd      
+            3924 out of 131072 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+        BootHighISRVector   0x000008    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+   BootLowInterruptVector   0x000018    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+          BootResetVector   0x000000    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+        Boot_CheckTimeout   0x0000a2    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+          Boot_ResetToApp   0x00009e    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+          ClassReqHandler   0x000eea    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+               ClearArray   0x000c2c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+             DontStartYet   0x000ef6    program     static                          
+               EraseFlash   0x000352    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+      HIDGetReportHandler   0x000d36    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+                HIDInitEP   0x000d3a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+              HIDRxReport   0x000dc2    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+      HIDSetReportHandler   0x000d38    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+              HIDTxReport   0x000d66    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+         InitializeSystem   0x000f40    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+                LongDelay   0x00040a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                     Main   0x000eec    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+                ProcessIO   0x0000de    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        USBCheckBusStatus   0x000a62    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+       USBCheckHIDRequest   0x000c50    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+       USBCheckStdRequest   0x00077a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+         USBCtrlEPService   0x00043c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+ USBCtrlEPServiceComplete   0x0006e6    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      USBCtrlTrfInHandler   0x000574    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+     USBCtrlTrfOutHandler   0x00053a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      USBCtrlTrfRxService   0x00067e    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+   USBCtrlTrfSetupHandler   0x0004ca    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      USBCtrlTrfTxService   0x0005be    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+         USBDriverService   0x000a9c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+         USBModuleDisable   0x000a90    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+          USBModuleEnable   0x000a80    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+USBPrepareForNextSetupTrf   0x000770    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+  USBProtocolResetHandler   0x000bba    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+          USBStallHandler   0x000b96    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+  USBStdFeatureReqHandler   0x0009be    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+      USBStdGetDscHandler   0x00082e    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+   USBStdGetStatusHandler   0x000922    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+      USBStdSetCfgHandler   0x0008dc    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+               USBSuspend   0x000b1c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+       USBWakeFromSuspend   0x000b86    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+               USB_CD_Ptr   0x000ee0    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+               USB_SD_Ptr   0x000ee4    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                 UserInit   0x000080    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+       WriteFlashSubBlock   0x00037a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+       ___case_2_lbl00014   0x000152    program     static                          
+       ___case_3_lbl00017   0x0001d8    program     static                          
+       ___case_4_lbl00021   0x00020a    program     static                          
+       ___case_5_lbl00028   0x00022e    program     static                          
+       ___case_6_lbl00029   0x0002c4    program     static                          
+       ___case_7_lbl00034   0x0002d4    program     static                          
+       ___case_8_lbl00035   0x000340    program     static                          
+         ___else_lbl00016   0x0001f2    program     static                          
+         ___else_lbl00037   0x00012a    program     static                          
+          ___for_lbl00005   0x000f3c    program     static                          
+          ___for_lbl00006   0x000f3e    program     static                          
+          ___for_lbl00008   0x000124    program     static                          
+          ___for_lbl00009   0x000128    program     static                          
+          ___for_lbl00009   0x000f1c    program     static                          
+          ___for_lbl00010   0x000110    program     static                          
+          ___for_lbl00018   0x000222    program     static                          
+          ___for_lbl00019   0x000228    program     static                          
+          ___for_lbl00020   0x000210    program     static                          
+          ___for_lbl00023   0x0002ba    program     static                          
+          ___for_lbl00024   0x0002be    program     static                          
+          ___for_lbl00026   0x00026c    program     static                          
+          ___for_lbl00030   0x00031e    program     static                          
+          ___for_lbl00031   0x000322    program     static                          
+          ___for_lbl00032   0x0002fc    program     static                          
+          ___for_lbl00043   0x000430    program     static                          
+          ___for_lbl00044   0x000434    program     static                          
+          ___for_lbl00047   0x000418    program     static                          
+           ___if_lbl00004   0x000f1a    program     static                          
+           ___if_lbl00008   0x000f38    program     static                          
+           ___if_lbl00011   0x000128    program     static                          
+           ___if_lbl00013   0x0001d6    program     static                          
+           ___if_lbl00013   0x000f78    program     static                          
+           ___if_lbl00015   0x000204    program     static                          
+           ___if_lbl00022   0x00024e    program     static                          
+           ___if_lbl00025   0x0002ba    program     static                          
+           ___if_lbl00027   0x0002be    program     static                          
+           ___if_lbl00033   0x00033e    program     static                          
+           ___if_lbl00036   0x00034a    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x00000c    program     static                          
+       ___return_lbl00001   0x0000a0    program     static                          
+       ___return_lbl00002   0x00001c    program     static                          
+       ___return_lbl00003   0x000f3e    program     static                          
+       ___return_lbl00007   0x00034a    program     static                          
+       ___return_lbl00010   0x000f98    program     static                          
+       ___return_lbl00025   0x000b7e    program     static                          
+       ___return_lbl00038   0x000c2a    program     static                          
+       ___return_lbl00038   0x000378    program     static                          
+       ___return_lbl00039   0x000402    program     static                          
+       ___return_lbl00041   0x000c48    program     static                          
+       ___return_lbl00042   0x000434    program     static                          
+   ___switchexit_lbl00012   0x00034a    program     static                          
+        ___while_lbl00011   0x000f50    program     static                          
+        ___while_lbl00012   0x000f6c    program     static                          
+        ___while_lbl00026   0x000b3c    program     static                          
+        ___while_lbl00027   0x000b50    program     static                          
+        ___while_lbl00029   0x000b62    program     static                          
+        ___while_lbl00030   0x000b7e    program     static                          
+        ___while_lbl00039   0x000be4    program     static                          
+        ___while_lbl00040   0x000bf2    program     static                          
+        ___while_lbl00040   0x000388    program     static                          
+        ___while_lbl00041   0x000400    program     static                          
+        ___while_lbl00042   0x000c3e    program     static                          
+        ___while_lbl00043   0x000c48    program     static                          
+        ___while_lbl00045   0x000420    program     static                          
+        ___while_lbl00046   0x000430    program     static                          
+               __config_0   0x01fff8    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_1   0x01fff9    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_2   0x01fffa    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_3   0x01fffb    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_4   0x01fffc    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_5   0x01fffd    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __tmplbl_0   0x000f34    program     static                          
+               __tmplbl_1   0x000f2e    program     static                          
+              __tmplbl_10   0x000b48    program     static                          
+              __tmplbl_11   0x000b42    program     static                          
+               __tmplbl_2   0x000240    program     static                          
+               __tmplbl_3   0x000268    program     static                          
+            __zero_memory   0x00001e    program     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    cfg01   0x000e3c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                compare_l   0x000034    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+               device_dsc   0x000e2a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                hid_rpt01   0x000ec3    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                   loop_h   0x00002c    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                   loop_l   0x000036    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                    sd000   0x000e65    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                    sd001   0x000e69    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                    sd002   0x000e9d    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+               zero_block   0x00002c    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+           AppResetVector   0x0001db       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                BootState   0x000184       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+               Boot_Blink   0x0001cb       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+             Boot_Timeout   0x0001ca       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        BufferedDataIndex   0x0001c6       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CtrlTrfData   0x000418       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                     DDRA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+         ErasePageTracker   0x000185       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATH   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+           MaxPageToErase   0x000100       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                   ODCON1   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PMCON   0x000f4a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMCONH   0x000f4b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               PMCONHbits   0x000f4b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMCONL   0x000f4a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               PMCONLbits   0x000f4a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMDIN2   0x000f44       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN2H   0x000f45       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN2L   0x000f44       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDOUT2   0x000f46       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT2H   0x000f47       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT2L   0x000f46       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PMEH   0x000f43       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMEHbits   0x000f43       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PMEL   0x000f42       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMELbits   0x000f42       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PMEN   0x000f42       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMMODE   0x000f48       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMMODEH   0x000f49       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMMODEHbits   0x000f49       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMMODEL   0x000f48       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMMODELbits   0x000f48       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMSTAT   0x000f40       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMSTATH   0x000f41       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMSTATHbits   0x000f41       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMSTATL   0x000f40       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMSTATLbits   0x000f40       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             PacketFromPC   0x000104       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+               PacketToPC   0x000144       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+    ProgramMemStopAddress   0x000101       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        ProgrammedPointer   0x0001c7       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        ProgrammingBuffer   0x000186       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                     RCON   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SPBRGH   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SetupPkt   0x000410       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UADDR   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UADDRbits   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UCFG   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UCFGbits   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UCON   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UCONbits   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEIE   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEIEbits   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEIR   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEIRbits   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP0   0x000f4c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP0bits   0x000f4c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP1   0x000f4d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP10   0x000f56       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP10bits   0x000f56       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP11   0x000f57       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP11bits   0x000f57       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP12   0x000f58       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP12bits   0x000f58       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP13   0x000f59       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP13bits   0x000f59       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP14   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP14bits   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP15   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP15bits   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP1bits   0x000f4d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP2   0x000f4e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP2bits   0x000f4e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP3   0x000f4f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP3bits   0x000f4f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP4   0x000f50       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP4bits   0x000f50       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP5   0x000f51       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP5bits   0x000f51       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP6   0x000f52       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP6bits   0x000f52       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP7   0x000f53       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP7bits   0x000f53       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP8   0x000f54       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP8bits   0x000f54       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP9   0x000f55       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP9bits   0x000f55       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UFRM   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UFRMH   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UFRMHbits   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UFRML   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UFRMLbits   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      UIE   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  UIEbits   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      UIR   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  UIRbits   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    USTAT   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                USTATbits   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+          active_protocol   0x0001dd       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+              bTRNIFCount   0x0001e2       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+   ctrl_trf_session_owner   0x0001cd       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+           ctrl_trf_state   0x0001cc       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+                    ep0Bi   0x000404       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    ep0Bo   0x000400       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    ep1Bi   0x00040c       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    ep1Bo   0x000408       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+            hid_report_in   0x000460       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+           hid_report_out   0x000420       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+           hid_rpt_rx_len   0x0001de       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+                idle_rate   0x0001dc       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+                     pDst   0x0001d0       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+                     pSrc   0x0001ce       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      pll_startup_counter   0x0001d9       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+         short_pkt_status   0x0001d4       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+           usb_active_cfg   0x0001d7       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+             usb_alt_intf   0x0001d8       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+         usb_device_state   0x0001d5       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                 usb_stat   0x0001d6       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                   wCount   0x0001d2       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+          BootResetVector   0x000000    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+       ___return_lbl00000   0x000004    program     static                          
+        BootHighISRVector   0x000008    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+       ___return_lbl00001   0x00000c    program     static                          
+   BootLowInterruptVector   0x000018    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+       ___return_lbl00002   0x00001c    program     static                          
+            __zero_memory   0x00001e    program     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               zero_block   0x00002c    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                   loop_h   0x00002c    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                compare_l   0x000034    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                   loop_l   0x000036    program     static C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UserInit   0x000080    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+          Boot_ResetToApp   0x00009e    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+       ___return_lbl00001   0x0000a0    program     static                          
+        Boot_CheckTimeout   0x0000a2    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                ProcessIO   0x0000de    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+          ___for_lbl00010   0x000110    program     static                          
+          ___for_lbl00008   0x000124    program     static                          
+          ___for_lbl00009   0x000128    program     static                          
+           ___if_lbl00011   0x000128    program     static                          
+         ___else_lbl00037   0x00012a    program     static                          
+       ___case_2_lbl00014   0x000152    program     static                          
+           ___if_lbl00013   0x0001d6    program     static                          
+       ___case_3_lbl00017   0x0001d8    program     static                          
+         ___else_lbl00016   0x0001f2    program     static                          
+           ___if_lbl00015   0x000204    program     static                          
+       ___case_4_lbl00021   0x00020a    program     static                          
+          ___for_lbl00020   0x000210    program     static                          
+          ___for_lbl00018   0x000222    program     static                          
+          ___for_lbl00019   0x000228    program     static                          
+       ___case_5_lbl00028   0x00022e    program     static                          
+               __tmplbl_2   0x000240    program     static                          
+           ___if_lbl00022   0x00024e    program     static                          
+               __tmplbl_3   0x000268    program     static                          
+          ___for_lbl00026   0x00026c    program     static                          
+           ___if_lbl00025   0x0002ba    program     static                          
+          ___for_lbl00023   0x0002ba    program     static                          
+          ___for_lbl00024   0x0002be    program     static                          
+           ___if_lbl00027   0x0002be    program     static                          
+       ___case_6_lbl00029   0x0002c4    program     static                          
+       ___case_7_lbl00034   0x0002d4    program     static                          
+          ___for_lbl00032   0x0002fc    program     static                          
+          ___for_lbl00030   0x00031e    program     static                          
+          ___for_lbl00031   0x000322    program     static                          
+           ___if_lbl00033   0x00033e    program     static                          
+       ___case_8_lbl00035   0x000340    program     static                          
+   ___switchexit_lbl00012   0x00034a    program     static                          
+           ___if_lbl00036   0x00034a    program     static                          
+       ___return_lbl00007   0x00034a    program     static                          
+               EraseFlash   0x000352    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+       ___return_lbl00038   0x000378    program     static                          
+       WriteFlashSubBlock   0x00037a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        ___while_lbl00040   0x000388    program     static                          
+        ___while_lbl00041   0x000400    program     static                          
+       ___return_lbl00039   0x000402    program     static                          
+                LongDelay   0x00040a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+          ___for_lbl00047   0x000418    program     static                          
+        ___while_lbl00045   0x000420    program     static                          
+        ___while_lbl00046   0x000430    program     static                          
+          ___for_lbl00043   0x000430    program     static                          
+       ___return_lbl00042   0x000434    program     static                          
+          ___for_lbl00044   0x000434    program     static                          
+         USBCtrlEPService   0x00043c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+   USBCtrlTrfSetupHandler   0x0004ca    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+     USBCtrlTrfOutHandler   0x00053a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      USBCtrlTrfInHandler   0x000574    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      USBCtrlTrfTxService   0x0005be    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+      USBCtrlTrfRxService   0x00067e    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+ USBCtrlEPServiceComplete   0x0006e6    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+USBPrepareForNextSetupTrf   0x000770    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+       USBCheckStdRequest   0x00077a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+      USBStdGetDscHandler   0x00082e    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+      USBStdSetCfgHandler   0x0008dc    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+   USBStdGetStatusHandler   0x000922    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+  USBStdFeatureReqHandler   0x0009be    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+        USBCheckBusStatus   0x000a62    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+          USBModuleEnable   0x000a80    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+         USBModuleDisable   0x000a90    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+         USBDriverService   0x000a9c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+               USBSuspend   0x000b1c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+        ___while_lbl00026   0x000b3c    program     static                          
+              __tmplbl_11   0x000b42    program     static                          
+              __tmplbl_10   0x000b48    program     static                          
+        ___while_lbl00027   0x000b50    program     static                          
+        ___while_lbl00029   0x000b62    program     static                          
+        ___while_lbl00030   0x000b7e    program     static                          
+       ___return_lbl00025   0x000b7e    program     static                          
+       USBWakeFromSuspend   0x000b86    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+          USBStallHandler   0x000b96    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+  USBProtocolResetHandler   0x000bba    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+        ___while_lbl00039   0x000be4    program     static                          
+        ___while_lbl00040   0x000bf2    program     static                          
+       ___return_lbl00038   0x000c2a    program     static                          
+               ClearArray   0x000c2c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+        ___while_lbl00042   0x000c3e    program     static                          
+       ___return_lbl00041   0x000c48    program     static                          
+        ___while_lbl00043   0x000c48    program     static                          
+       USBCheckHIDRequest   0x000c50    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+      HIDGetReportHandler   0x000d36    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+      HIDSetReportHandler   0x000d38    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+                HIDInitEP   0x000d3a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+              HIDTxReport   0x000d66    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+              HIDRxReport   0x000dc2    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+               device_dsc   0x000e2a    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                    cfg01   0x000e3c    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                    sd000   0x000e65    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                    sd001   0x000e69    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                    sd002   0x000e9d    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                hid_rpt01   0x000ec3    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+               USB_CD_Ptr   0x000ee0    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+               USB_SD_Ptr   0x000ee4    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+          ClassReqHandler   0x000eea    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdsc.c
+                     Main   0x000eec    program     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+             DontStartYet   0x000ef6    program     static                          
+           ___if_lbl00004   0x000f1a    program     static                          
+          ___for_lbl00009   0x000f1c    program     static                          
+               __tmplbl_1   0x000f2e    program     static                          
+               __tmplbl_0   0x000f34    program     static                          
+           ___if_lbl00008   0x000f38    program     static                          
+          ___for_lbl00005   0x000f3c    program     static                          
+          ___for_lbl00006   0x000f3e    program     static                          
+       ___return_lbl00003   0x000f3e    program     static                          
+         InitializeSystem   0x000f40    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+        ___while_lbl00011   0x000f50    program     static                          
+        ___while_lbl00012   0x000f6c    program     static                          
+           ___if_lbl00013   0x000f78    program     static                          
+       ___return_lbl00010   0x000f98    program     static                          
+               __config_0   0x01fff8    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_1   0x01fff9    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_2   0x01fffa    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_3   0x01fffb    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_4   0x01fffc    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+               __config_5   0x01fffd    program     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+           MaxPageToErase   0x000100       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+    ProgramMemStopAddress   0x000101       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+             PacketFromPC   0x000104       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+               PacketToPC   0x000144       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                BootState   0x000184       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+         ErasePageTracker   0x000185       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        ProgrammingBuffer   0x000186       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        BufferedDataIndex   0x0001c6       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+        ProgrammedPointer   0x0001c7       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+             Boot_Timeout   0x0001ca       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+               Boot_Blink   0x0001cb       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+           ctrl_trf_state   0x0001cc       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+   ctrl_trf_session_owner   0x0001cd       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+                     pSrc   0x0001ce       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+                     pDst   0x0001d0       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+                   wCount   0x0001d2       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+         short_pkt_status   0x0001d4       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+         usb_device_state   0x0001d5       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                 usb_stat   0x0001d6       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+           usb_active_cfg   0x0001d7       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+             usb_alt_intf   0x0001d8       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+      pll_startup_counter   0x0001d9       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+           AppResetVector   0x0001db       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+                idle_rate   0x0001dc       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+          active_protocol   0x0001dd       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+           hid_rpt_rx_len   0x0001de       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\hid.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\Boot87J50Family.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usb9.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\main.c
+                  __tmp_0   0x0001df       data     static c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbctrltrf.c
+              bTRNIFCount   0x0001e2       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbdrv.c
+                    ep0Bo   0x000400       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    ep0Bi   0x000404       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    ep1Bo   0x000408       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                    ep1Bi   0x00040c       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                 SetupPkt   0x000410       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+              CtrlTrfData   0x000418       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+           hid_report_out   0x000420       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+            hid_report_in   0x000460       data     extern c:\users\christian\desktop\projects\melacs\melacs ny stack\bootloader\Src\usbmmap.c
+                  PMSTATL   0x000f40       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMSTATLbits   0x000f40       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMSTAT   0x000f40       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMSTATHbits   0x000f41       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMSTATH   0x000f41       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PMEN   0x000f42       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMELbits   0x000f42       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PMEL   0x000f42       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMEHbits   0x000f43       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PMEH   0x000f43       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMDIN2   0x000f44       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN2L   0x000f44       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN2H   0x000f45       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDOUT2   0x000f46       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT2L   0x000f46       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT2H   0x000f47       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMMODELbits   0x000f48       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMMODEL   0x000f48       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMMODE   0x000f48       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMMODEHbits   0x000f49       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMMODEH   0x000f49       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               PMCONLbits   0x000f4a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMCONL   0x000f4a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PMCON   0x000f4a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMCONH   0x000f4b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               PMCONHbits   0x000f4b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP0bits   0x000f4c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP0   0x000f4c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP1bits   0x000f4d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP1   0x000f4d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP2bits   0x000f4e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP2   0x000f4e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP3bits   0x000f4f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP3   0x000f4f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP4bits   0x000f50       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP4   0x000f50       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP5bits   0x000f51       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP5   0x000f51       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP6bits   0x000f52       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP6   0x000f52       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP7bits   0x000f53       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP7   0x000f53       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP8   0x000f54       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP8bits   0x000f54       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEP9   0x000f55       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEP9bits   0x000f55       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP10   0x000f56       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP10bits   0x000f56       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP11   0x000f57       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP11bits   0x000f57       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP12   0x000f58       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP12bits   0x000f58       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP13   0x000f59       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP13bits   0x000f59       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP14   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP14bits   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UEP15   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UEP15bits   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  UIEbits   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      UIE   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEIE   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEIEbits   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UADDRbits   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UADDR   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UCFGbits   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UCFG   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UFRML   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UFRMLbits   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UFRM   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                UFRMHbits   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    UFRMH   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  UIRbits   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      UIR   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UEIR   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UEIRbits   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                USTATbits   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    USTAT   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     UCON   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 UCONbits   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SPBRGH   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATH   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   ODCON1   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\extended\proc\p18F87J50.asm
+
+
