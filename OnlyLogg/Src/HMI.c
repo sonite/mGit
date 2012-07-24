@@ -1,8 +1,5 @@
 /******************************************************************************
-* Function:        HMIupdate(),LastPage(),NewPage(),ShowPage1(),ShowPage2(),ShowPage3(),Options(),
-*			       ClearMessageBuffer(),SetClock(),SetADconv(),SetTemp(),SetSol(),SetClock_Edit(),
-*				   SetADconv_Edit(),SetTemp_Edit(),SetSol_Edit(),Options_Loop(),Toolbar1(),
-*				   Toolbar2(),Toolbar3(),Toolbar4(),DisplayToolbar(),ShowDate(),Failure()
+* Function:
 * PreCondition:    None
 * Input:		   None
 * Output:		   None

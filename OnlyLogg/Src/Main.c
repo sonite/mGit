@@ -2,16 +2,16 @@
  *                                                                      	  *
  * Logger System															  *
  *																			  *
- * Version:        1.5.4													  *
+ * Version:        1.5.3													  *
  * Date:           2012-07-11												  *
  * Code:           Finsun Inresol AB										  *
  * Author:         Christian Gruffman										  *
- ***********************(   Microship MCC18 v3.48    )*************************/
+ ***********************(   Microship MCC18 v3.42    )*************************/
 
 //** I N C L U D E S **********************************************************/
 #include "Main.h"
 
-char rom SoftInfo[] = "1.5.4";
+char rom SoftInfo[] = "1.5.3";
 
 //** I N T E R N A L  V A R I A B L E S ***************************************/
 /*
