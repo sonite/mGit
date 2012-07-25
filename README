@@ -2,8 +2,8 @@ The Project can be found in "Only Logg" and opened with Programmers Notpad.
 Important files like the different Stack files, can be found in Commons/Microchip.
 
 This is a Project where the Melacs board are supposed to log everything on it's
-analog inputs. Then save the log file to a SD card. Contents of the SD card can be reached through the
-local network if connected.
+analog inputs. Then save the log file to a SD card. Contents of the SD card can be 
+reached through the local network if connected.
 
 The SD card can also be reached through an usb connection.
 
