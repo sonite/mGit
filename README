@@ -1,10 +1,21 @@
 The Project can be found in "Only Logg" and opened with Programmers Notpad.
 Important files like the different Stack files, can be found in Commons/Microchip.
 
-This is a Project where the Melacs board are supposed just to log everything on it's
+This is a Project where the Melacs board are supposed to log everything on it's
 analog inputs. Then save the log file to a SD card. Contents of the SD card can be reached through the
 local network if connected.
 
 The SD card can also be reached through an usb connection.
+
+Please contribute with ideas, fixes and solutions!
+Go to: https://github.com/sonite/mGit/wiki/Getting-Started
+
+I know by experience that the new microchip stack's do some errors. Sometimes the device restart by the watchdog and for this I can't find the problem.
+
+After a while with these new stack the logger stops logging and the http server can't be reached. But I can ping it. I think the problem might be something with open files not closed correctly or a buffer overflow.
+
+The stacks are the latest from microchip (usb, ethernet, mdd).
+
+Project is compiled by C18 3.42 and in extended mode.
 
 www.melacs.com
